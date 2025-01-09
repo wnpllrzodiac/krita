@@ -4,8 +4,8 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef KIS_TOOL_BRUSH_H_
-#define KIS_TOOL_BRUSH_H_
+#ifndef KIS_TOOL_BRUSHNEW_H_
+#define KIS_TOOL_BRUSHNEW_H_
 
 #include "kis_tool_freehand.h"
 
@@ -152,7 +152,7 @@ public:
     ~KisToolBrushNewFactory() override {}
 
     KoToolBase * createTool(KoCanvasBase *canvas) override {
-        return new KisToolBrush(canvas);
+        return new KisToolBrushNew(canvas);
     }
 
     QList<QAction *> createActionsImpl() override;
