@@ -846,6 +846,7 @@ void KisNodeManager::slotUiActivatedNode(KisNodeSP node)
 
         QStringList pixelTools = QStringList()
                 << "KritaShape/KisToolBrush"
+                << "KritaShape/KisToolBrushNew"
                 << "KritaShape/KisToolDyna"
                 << "KritaShape/KisToolMultiBrush"
                 << "KritaFill/KisToolFill"

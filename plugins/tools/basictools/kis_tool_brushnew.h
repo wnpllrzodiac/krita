@@ -132,7 +132,7 @@ class KisToolBrushNewFactory : public KisToolPaintFactoryBase
 
 public:
     KisToolBrushNewFactory()
-            : KisToolPaintFactoryBase("KritaShape/KisToolBrush") {
+            : KisToolPaintFactoryBase("KritaShape/KisToolBrushNew") {
 
         setToolTip(i18n("Freehand Brush Tool New"));
 
