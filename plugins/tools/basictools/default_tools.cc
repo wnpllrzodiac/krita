@@ -18,6 +18,7 @@
 #include "kis_paint_device.h"
 #include "kis_tool_fill.h"
 #include "kis_tool_brush.h"
+#include "kis_tool_brushnew.h"
 #include "kis_tool_multihand.h"
 #include "kis_tool_freehand.h"
 #include "kis_tool_gradient.h"
@@ -40,6 +41,7 @@ DefaultTools::DefaultTools(QObject *parent, const QVariantList &)
     KoToolRegistry::instance()->add(new KisToolFillFactory());
     KoToolRegistry::instance()->add(new KisToolGradientFactory());
     KoToolRegistry::instance()->add(new KisToolBrushFactory());
+    KoToolRegistry::instance()->add(new KisToolBrushNewFactory());
     KoToolRegistry::instance()->add(new KisToolColorSamplerFactory());
     KoToolRegistry::instance()->add(new KisToolLineFactory());
     KoToolRegistry::instance()->add(new KisToolEllipseFactory());
