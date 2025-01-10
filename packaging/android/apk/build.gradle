@@ -150,6 +150,15 @@ android {
         }
     }
 
+    signingConfigs {
+        release {
+            keyAlias 'Multimedia'
+            keyPassword '666666'
+            storeFile file('multimedia.keystore')
+            storePassword '123456'
+        }
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -172,6 +181,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
                     'proguard-rules.pro'
         }
